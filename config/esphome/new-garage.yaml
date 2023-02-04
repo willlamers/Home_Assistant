@@ -1,0 +1,28 @@
+esphome:
+  name: new-garage
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "D73VQOB65T4Nel9DT29I6Kcj3QRR+xrBwUhjcRwjjWQ="
+
+ota:
+  password: "1f6b72503f227f37e95017717ea19be8"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "New-Garage Fallback Hotspot"
+    password: "GmUQDo8SglhF"
+
+captive_portal:
+    
