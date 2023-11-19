@@ -43,6 +43,8 @@ i2c:
 display:
   - platform: lcd_pcf8574
     dimensions: 18x4
-    address: 0x3F
+    address: 0x27
+      #  address: 0x3F
     lambda: |-
+
       it.print("Hello World!");
